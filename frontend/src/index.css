@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: 'Courier', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: #00FF00;
+}
+
+.terminal {
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
